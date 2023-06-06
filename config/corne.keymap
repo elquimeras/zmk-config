@@ -69,5 +69,19 @@
                              &kp LGUI &trans &kp SPACE          &kp RET   &trans    &kp RALT
                         >;
                 };
+
+                adjust_layer {
+// -----------------------------------------------------------------------------------------
+// |  TAB |  !  |  UP |  #  |  $  |  1  |  ||  |  ^  |  &  |  *  |  (  |  )  | BKSP |
+// | SHFT | LFT | DWN | RGT |     |     |  ||  |  -  |  =  |  [  |  ]  |  \  |  `   |
+// |   @  |     |     |     |     |     |  ||  |  _  |  +  |  {  |  }  | "|" |  ~   |
+//                    | GUI |     | SPC |  ||  | ENT |     | ALT |
+                        bindings = <
+   &kp TAB &kp EXCL &kp UP &kp HASH &kp DLLR &kp N1          &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
+   &kp LSHFT &kp LEFT &kp DOWN &kp RIGHT &trans &trans          &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
+   &kp AT  &trans   &trans &trans   &trans   &trans             &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+                             &kp LGUI &trans &kp SPACE          &kp RET   &trans    &kp RALT
+                        >;
+                };
         };
 };
