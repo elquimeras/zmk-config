@@ -22,7 +22,7 @@
                         label = "TAP_DANCE_1";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
-                        bindings = <&mt LS(N9)>, <&mt RA(SQT)>;
+                        bindings = <&kp LS(N9)>, <&kp RA(SQT)>;
                 };
         };
 
