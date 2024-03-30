@@ -46,6 +46,13 @@
                         tapping-term-ms = <200>;
                         bindings = <&kp RA(RBKT)>, <&kp LS(GRAVE)>;
                 };
+                td4: tap_dance_4 {
+                        compatible = "zmk,behavior-tap-dance";
+                        label = "QUESTION_MARKS";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <200>;
+                        bindings = <&kp UNDER>, <&kp PLUS>;
+                };
         };
 
         keymap {
@@ -86,10 +93,10 @@
         // |   @  |  =  |  /  |  `  |  \  |     |  ||  |  ¿  |  ?  |  ^  |  *  |  Ç  |  >   |
         //                    | GUI |     | SPC |  ||  | ENT |     | ALT |
                 bindings = <
-          &kp TAB  &kp EXCL  &kp UP &kp LA(N3) &kp DLLR  &kp PRCNT      &kp CARET  &kp AMPS  &kp KP_MULTIPLY  &kp MINUS  &kp RPAR  &kp BSPC
+          &kp TAB  &kp EXCL  &kp UP &kp LA(N3) &kp DLLR  &kp PRCNT      &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp MINUS  &kp RPAR  &kp BSPC
           &kp LSHFT  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans      &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LA(N2)  &kp LS(N0)  &kp LS(N7)  &kp LBKT  &kp RA(NUBS)  &trans      &kp PLUS   &kp UNDER  &kp LBRC &kp RBRC  &kp PIPE  &kp TILDE
-                                            &trans  &trans  &trans      &trans  &trans  &trans
+&kp LA(N2)  &kp LS(N0)  &kp LS(N7)  &kp LBKT  &kp RA(NUBS)  &trans      &td4       &kp PLUS  &kp LBRC &kp RBRC  &kp PIPE  &kp TILDE
+                                            &trans  &trans  &trans      &trans     &trans     &trans
                         >;
                 };
 
